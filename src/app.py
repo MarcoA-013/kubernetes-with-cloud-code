@@ -14,7 +14,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     """Return a simple HTML page with a friendly message."""
-    message = "It's running!"
+    message = "It's running! Yeah!!"
 
     return render_template('index.html', message=message)
 

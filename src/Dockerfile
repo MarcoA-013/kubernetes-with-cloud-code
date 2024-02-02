@@ -1,3 +1,5 @@
+# Initialization of the Docker container
+
 # Python image to use.
 FROM python:3.10-alpine
 

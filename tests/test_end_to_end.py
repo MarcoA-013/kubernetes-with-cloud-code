@@ -40,7 +40,8 @@ def test_end_to_end():
 
     base_url = os.environ.get('E2E_URL', 'http://localhost:8080')
 
-    # Use retry because it will take some indeterminate time for the pub/sub
+    # Use retry because it will take 
+    # some indeterminate time for the pub/sub
     # message to be processed.
     @retry(wait_exponential_multiplier=2000, stop_max_attempt_number=3)
     def test_request():
